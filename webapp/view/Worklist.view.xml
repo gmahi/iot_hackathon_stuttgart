@@ -1,0 +1,28 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:semantic="sap.m.semantic" controllerName="ch81fullscreen.controller.Main">
+	<semantic:FullscreenPage title="Full Screen">
+		<semantic:content>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Remote" subheader="Remote Connection"
+						press="onRemote">
+						<tileContent>
+							<TileContent >
+								<content>
+									<ImageContent src="sap-icon://world"/>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Setttings" subheader="Settings"
+						press="onSettings">
+						<tileContent>
+							<TileContent>
+								<content>
+									<ImageContent src="sap-icon://settings"></ImageContent>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+		
+		</semantic:content>
+	</semantic:FullscreenPage>
+</mvc:View>
