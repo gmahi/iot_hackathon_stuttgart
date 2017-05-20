@@ -13,9 +13,9 @@ sap.ui.define([
 		onInit: function() {
 			this.getOwnerComponent().getRouter().getRoute("settings").attachPatternMatched(function(oEvent) {
 				var that = this;
-				var sSalesOrderID =
-					oEvent.getParameter("arguments").SalesOrderID;
-				this.getView().getModel().metadataLoaded().then(function() {
+				/*var sSalesOrderID =
+					oEvent.getParameter("arguments").SalesOrderID;*/
+			/*	this.getView().getModel().metadataLoaded().then(function() {
 					var sObjectPath =
 						that.getView().getModel().createKey("SalesOrderSet", {
 							SalesOrderID: sSalesOrderID
@@ -26,7 +26,7 @@ sap.ui.define([
 							expand: "ToLineItems"
 						}
 					});
-				});
+				});*/
 			}.bind(this));
 
 		},

@@ -13,7 +13,7 @@ sap.ui.define([
 		onInit: function() {
 			this.getOwnerComponent().getRouter().getRoute("remote").attachPatternMatched(function(oEvent) {
 				var that = this;
-				var sSalesOrderID =
+			/*	var sSalesOrderID =
 					oEvent.getParameter("arguments").SalesOrderID;
 				this.getView().getModel().metadataLoaded().then(function() {
 					var sObjectPath =
@@ -26,8 +26,13 @@ sap.ui.define([
 							expand: "ToLineItems"
 						}
 					});
-				});
+				});*/
 			}.bind(this));
+
+		},
+
+		onChangeA: function(event) {
+			console.log(event.getParameter('state'));
 
 		},
 

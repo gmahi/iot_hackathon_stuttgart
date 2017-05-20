@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:semantic="sap.m.semantic" controllerName="ch81fullscreen.controller.Main">
-	<semantic:FullscreenPage title="Full Screen">
+	<semantic:FullscreenPage title="IOT WIFIRE">
 		<semantic:content>
 			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Remote" subheader="Remote Connection"
 						press="onRemote">
