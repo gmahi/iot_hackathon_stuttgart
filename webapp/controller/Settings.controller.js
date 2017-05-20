@@ -30,6 +30,24 @@ sap.ui.define([
 			}.bind(this));
 
 		},
+		
+		onSave:function(event){
+			var IP = this.getView().byId("inputIP").getValue();
+			
+			var PW = this.getView().byId("inputPW").getValue();
+			console.log(IP + " " + PW);
+			
+		},
+		
+		onCancel:function(event){
+			var IP = this.getView().byId("inputIP").setValue("");
+			
+			var PW = this.getView().byId("inputPW").setValue("");
+		
+			
+		},
+		
+		
 
 		onNavBack: function() {
 			history.go(-1);

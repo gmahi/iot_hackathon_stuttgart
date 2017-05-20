@@ -25,10 +25,10 @@
 		<content>
 			<Panel>
 				<InputListItem label="IP/Domain">
-					<Input placeholder="IP/Domain" value="A"/>
+					<Input placeholder="IP/Domain" value="A" id="inputIP"/>
 				</InputListItem>
 				<InputListItem label="PASSWORD">
-					<Input placeholder="PASSWORD" value="PASSWORD"/>
+					<Input placeholder="PASSWORD" value="PASSWORD" id="inputPW"/>
 				</InputListItem>
 			</Panel>
 		</content>
