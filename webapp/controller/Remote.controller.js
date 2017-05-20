@@ -13,28 +13,56 @@ sap.ui.define([
 		onInit: function() {
 			this.getOwnerComponent().getRouter().getRoute("remote").attachPatternMatched(function(oEvent) {
 				var that = this;
-			/*	var sSalesOrderID =
-					oEvent.getParameter("arguments").SalesOrderID;
-				this.getView().getModel().metadataLoaded().then(function() {
-					var sObjectPath =
-						that.getView().getModel().createKey("SalesOrderSet", {
-							SalesOrderID: sSalesOrderID
+				/*	var sSalesOrderID =
+						oEvent.getParameter("arguments").SalesOrderID;
+					this.getView().getModel().metadataLoaded().then(function() {
+						var sObjectPath =
+							that.getView().getModel().createKey("SalesOrderSet", {
+								SalesOrderID: sSalesOrderID
+							});
+						that.getView().bindElement({
+							path: "/" + sObjectPath,
+							parameters: {
+								expand: "ToLineItems"
+							}
 						});
-					that.getView().bindElement({
-						path: "/" + sObjectPath,
-						parameters: {
-							expand: "ToLineItems"
-						}
-					});
-				});*/
+					});*/
 			}.bind(this));
 
 		},
 
-		onChangeA: function(event) {
+	/*	onChangeA: function(event) {
 			console.log(event.getParameter('state'));
 
+		},*/
+
+		onOn: function(event) {
+			console.log("Pressed On Button");
+
 		},
+		
+		
+		onOFF       : function(event) {
+			console.log("Pressed OFF Button");
+
+		},
+		
+		
+		onPressA: function(event) {
+			console.log("Pressed A Button");
+
+		},
+		
+		onPressB       : function(event) {
+			console.log("Pressed B Button");
+
+		},
+		
+		onPressC: function(event) {
+			console.log("Pressed C Button");
+
+		},
+		
 
 		onNavBack: function() {
 			history.go(-1);

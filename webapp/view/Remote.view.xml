@@ -1,13 +1,20 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:semantic="sap.m.semantic" controllerName="ch81fullscreen.controller.Remote">
+	xmlns:semantic="sap.m.semantic" controllerName="ch81fullscreen.controller.Remote" xmlns:l="sap.ui.layout">
 	<semantic:FullscreenPage title="Remote functions" id="__page0" showNavButton="true" navButtonPress="onNavBack">
 		<semantic:content>
 			<Panel>
-				<List headerText="Input">
-					<InputListItem label="A">
+				
+					<!--<InputListItem label="A">
 						<Switch state="true" change="onChangeA" id="swichA"/>
-					</InputListItem>
-				</List>
+					</InputListItem>-->
+					<l:VerticalLayout class="sapUiSmallMargin" >
+					<Button text="ON" press="onOn" type="Accept"/>
+					<Button text="OFF" press="onOFF" type="Reject"/>
+					<Button text="A" press="onPressA" />
+					<Button text="B" press="onPressB" />
+					<Button text="C" press="onPressC" />
+					</l:VerticalLayout>
+			
 				<!--	<InputListItem label="A">
 			<Input
 				placeholder="A"
